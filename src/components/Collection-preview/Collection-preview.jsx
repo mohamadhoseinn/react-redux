@@ -1,3 +1,5 @@
+import CollectionItem from "../Collection-item/CollectionItem";
+
 import "./Collection-preview.scss";
 
 const CollectionPreview = ({ collection }) => {
@@ -8,7 +10,7 @@ const CollectionPreview = ({ collection }) => {
         {collection.items
           .filter((item, index) => index < 4)
           .map((item) => {
-            return <div key={item.id}>{item.name}</div>;
+            return <CollectionItem key={item.id} collectionItem={item} />;
           })}
       </div>
     </div>
