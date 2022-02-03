@@ -7,7 +7,7 @@ const MenuItemComponent = ({ items }) => {
   return (
     <div
       className={`${items.size} menu-item`}
-      onClick={() => navigate(`${items.linkUrl}`)}
+      onClick={() => navigate(items.linkUrl)}
     >
       <div
         className="background-image"
