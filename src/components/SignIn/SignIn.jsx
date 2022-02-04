@@ -1,6 +1,7 @@
 import { useState } from "react";
 
-import FormInput from "../FormInput/FormInput";
+import FormInput from "../../shared/FormInput/FormInput";
+import CustomButton from "../../shared/CustomButton/CustomButton";
 
 import "./SignIn.scss";
 
@@ -34,7 +35,6 @@ const SignIn = () => {
           label="email"
           required
         />
-        <label>Email</label>
         <FormInput
           name="password"
           type="password"
@@ -43,8 +43,7 @@ const SignIn = () => {
           label="password"
           required
         />
-        <label>Password</label>
-        <input type="submit" value="Submit Form" />
+        <CustomButton type="submit">Sign In</CustomButton>
       </form>
     </div>
   );
